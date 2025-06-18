@@ -93,38 +93,39 @@ function handleSubmit() {
     v-model="username"
     type="text"
     placeholder="Name"
+    required
     class="border p-2 mb-2 w-full rounded outline-none"
   />
 
   <input
     v-model="email"
     type="email"
-    placeholder="Email"
+    placeholder="Email" required
     class="border p-2 mb-2 w-full rounded outline-none"
   />
   <input
     v-model="phone"
     type="text"
-    placeholder="phone"
+    placeholder="phone" required
     class="border p-2 mb-2 w-full rounded outline-none"
   />
   <input
     v-model="website"
     type="text"
-    placeholder="website"
+    placeholder="website" required
     class="border p-2 mb-2 w-full rounded outline-none"
   />
   <input
     v-model="company"
     type="text"
-    placeholder="company"
+    placeholder="company" required
     class="border p-2 mb-2 w-full rounded outline-none"
   />
 
   <input
     v-model="city"
     type="text"
-    placeholder="city"
+    placeholder="city" required
     class="border p-2 mb-2 w-full rounded outline-none"
   />
  

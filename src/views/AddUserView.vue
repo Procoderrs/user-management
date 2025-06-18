@@ -57,12 +57,12 @@ function handleSubmit() {
   <h2 class="text-center text-2xl text-cyan-800 font-bold dark:text-white pt-6">Add New User</h2>
 
   <form @submit.prevent="handleSubmit" class="p-4 max-w-md mx-auto dark:text-white">
-    <input v-model="username" type="text" placeholder="Name" class="border p-2 mb-2 w-full rounded outline-none " />
-    <input v-model="email" type="email" placeholder="Email" class="border p-2 mb-2 w-full rounded outline-none " />
-    <input v-model="phone" type="text" placeholder="Phone" class="border p-2 mb-2 w-full rounded outline-none" />
-    <input v-model="website" type="text" placeholder="Website" class="border p-2 mb-2 w-full rounded outline-none" />
-    <input v-model="company" type="text" placeholder="Company" class="border p-2 mb-2 w-full rounded outline-none" />
-    <input v-model="city" type="text" placeholder="City" class="border p-2 mb-4 w-full rounded outline-none" />
+    <input v-model="username" type="text" required placeholder="Name" class="border p-2 mb-2 w-full rounded outline-none " />
+    <input v-model="email" type="email"required placeholder="Email" class="border p-2 mb-2 w-full rounded outline-none " />
+    <input v-model="phone" type="text"required placeholder="Phone" class="border p-2 mb-2 w-full rounded outline-none" />
+    <input v-model="website" type="text"required placeholder="Website" class="border p-2 mb-2 w-full rounded outline-none" />
+    <input v-model="company" type="text"required placeholder="Company" class="border p-2 mb-2 w-full rounded outline-none" />
+    <input v-model="city" type="text"required placeholder="City" class="border p-2 mb-4 w-full rounded outline-none" />
 
     <button type="submit" class="bg-cyan-700 hover:bg-cyan-800 text-white px-4 py-2 rounded w-full">
       {{ editingId ? 'Update User' : 'Add User' }}
